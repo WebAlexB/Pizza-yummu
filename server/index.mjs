@@ -1,6 +1,5 @@
 import fastify from 'fastify';
 import fastifyStatic from '@fastify/static';
-import productsData from '../src/components/product/productsData';
 import { join } from 'path';
 
 const server = fastify();
