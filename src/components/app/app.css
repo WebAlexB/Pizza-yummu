@@ -1,0 +1,64 @@
+/* Общие стили */
+body, html {
+    padding: 0;
+    background: #ffffff;
+    color: #898989;
+    font-family: Ubuntu sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    overflow-x: hidden;
+    margin: 0 auto;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+    font-family: Ubuntu sans-serif;
+    color: black;
+}
+li {
+    list-style-type: none;
+}
+
+p {
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
+
+.section {
+    background: rgb(234, 234, 234);
+}
+
+.section .products {
+    padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .menu-footer a {
+        margin: 0 2px auto;
+    }
+    .menu-header a {
+        color: #333;
+    }
+    .menu-header a {
+        margin: 0 5px auto;
+    }
+    .menu-header a, .menu-footer a {
+        text-decoration: none;
+        font-size: 20px;
+    }
+}

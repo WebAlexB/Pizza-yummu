@@ -1,0 +1,104 @@
+/* Стили для хедера и футера */
+
+header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding: 20px 0;
+    height: 119px;
+    background: rgb(240, 240, 240);
+
+}
+
+.header-yummu, .footer-yummu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-header, .logo-header, .info-header, .logo-footer, .menu-footer, .social-footer {
+    width: calc(33.33% - 10px);
+    margin: 5px;
+    text-align: center;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-header p {
+    padding: 0px 10px;
+}
+.info-header a {
+    color: black;
+}
+
+.menu-header a, .menu-footer a {
+    text-decoration: none;
+    font-size: 30px;
+}
+.menu-header a {
+    color: #333;
+}
+.menu-header a {
+    margin: 0 10px auto;
+}
+
+header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding: 20px 0;
+    height: 119px;
+    background: rgb(240, 240, 240);
+
+}
+
+.header-yummu, .footer-yummu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.info {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-header, .logo-header, .info-header, .logo-footer, .menu-footer, .social-footer {
+    width: calc(33.33% - 10px);
+    margin: 5px;
+    text-align: center;
+}
+.info-header p {
+    padding: 0px 10px;
+}
+.info-header a {
+    color: black;
+}
+
+.menu-header a, .menu-footer a {
+    text-decoration: none;
+    font-size: 30px;
+}
+.menu-header a {
+    color: #333;
+}
+.menu-header a {
+    margin: 0 10px auto;
+}
+.card-header {
+    border-radius: 100px;
+    border: 1px #ECC600 solid;
+    height: 46px;
+    width: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}

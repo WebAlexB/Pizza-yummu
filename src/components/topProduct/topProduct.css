@@ -1,0 +1,82 @@
+/*!* Стили для top product *!*/
+
+.tabs {
+    display: grid;
+    justify-content: center;
+    padding: 57px 0;
+    margin-top: -50px;
+    position: relative;
+    background: rgb(234, 234, 234);
+}
+
+.tab {
+    display: flex;
+}
+
+.tab button {
+    margin: 0 70px auto;
+    font-size: 25px;
+    padding: 20px 60px;
+    border-radius: 27px;
+    border: 1px solid black;
+    color: black;
+}
+.tab button:hover {
+    background: rgb(236, 198, 0);
+    border: unset;
+}
+.title-top {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.title h2 {
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.info-top {
+    display: flex;
+    justify-content: space-evenly;
+}
+.top-product-name p {
+    font-size: 19px;
+    margin: 20px auto;
+    color: white;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.top-product-name .name-top {
+    font-size: 30px;
+    color: rgb(236, 198, 0);
+    text-transform: uppercase;
+
+}
+.top-item {
+    display: flex;
+}
+.top-product {
+    background: rgb(54, 54, 54);
+}
+.content-top {
+    display: flex;
+    height: 30px;
+    align-items: flex-end;
+}
+.top-product-name {
+    padding: 25px 10px;
+}
+.first-top {
+    margin-left: 25px;
+}
+.button-sent {
+    height: 60px;
+    border-radius: 27px;
+    width: 200px;
+    background: rgb(236, 198, 0);
+    font-size: 16px;
+}

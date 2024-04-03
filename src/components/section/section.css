@@ -1,0 +1,33 @@
+.banner-pizza {
+    padding-top: 100px;
+}
+.pizza {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+.banners {
+    position: relative;
+}
+.tab{
+    padding-bottom: 30px;
+}
+.pizza {
+    animation: spin 4s linear infinite;
+}
+.tabs h3 {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
