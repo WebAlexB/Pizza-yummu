@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import productsData from '../product/productsData';
+import React, {Component} from 'react';
+import productsData from '../services/productsData';
 import QuantityControl from '../quantityControl/QuantityControl';
 import '../product/product.css';
 
@@ -8,32 +8,37 @@ class Product extends Component {
         super(props);
         this.state = {
             currentCategory: props.currentCategory,
-            cart: {},
+            cart: {}
         };
     }
 
-    handleAddToCart = (productId) => {
-        this.setState(prevState => ({
-            cart: {
-                ...prevState.cart,
-                [productId]: (prevState.cart[productId] || 0) + 1
-            }
-        }));
+    handleAddToCart = (productId, quantity) => {
+        if (quantity > 0) {
+            this.props.handleAddToCart(productId, quantity);
+        }
     }
 
-    handleRemoveFromCart = (productId) => {
+    increment = (productId) => {
         this.setState(prevState => {
-            const updatedCart = { ...prevState.cart };
+            const updatedCart = {...prevState.cart};
+            updatedCart[productId] = (updatedCart[productId] || 0) + 1;
+            return {cart: updatedCart};
+        });
+    }
+
+    decrement = (productId) => {
+        this.setState(prevState => {
+            const updatedCart = {...prevState.cart};
             if (updatedCart[productId] && updatedCart[productId] > 0) {
                 updatedCart[productId]--;
             }
-            return { cart: updatedCart };
+            return {cart: updatedCart};
         });
     }
 
     render() {
-        const { currentCategory } = this.props;
-        const { cart } = this.state;
+        const {cart} = this.state;
+        const {currentCategory} = this.props;
         const filteredProducts = productsData.filter(product => product.category === currentCategory);
 
         return (
@@ -58,14 +63,12 @@ class Product extends Component {
                                     <div className="contact-quantity">
                                         <QuantityControl
                                             quantity={cart[product.id] || 0}
-                                            onIncrement={() => this.handleAddToCart(product.id)}
-                                            onDecrement={() => this.handleRemoveFromCart(product.id)}
+                                            onIncrement={() => this.increment(product.id)}
+                                            onDecrement={() => this.decrement(product.id)}
                                         />
-                                        <button className="icon-cart-button" onClick={() => this.handleAddToCart(product.id)}>
+                                        <button className="icon-cart-button"
+                                                onClick={() => this.handleAddToCart(product.id, cart[product.id] || 0)}>
                                             <img src="static/images/body/cart-circle.png" alt="cart"/>
-                                            {cart[product.id] > 0 && (
-                                                <span className="cart-count">{cart[product.id]}</span>
-                                            )}
                                         </button>
                                     </div>
                                 </div>

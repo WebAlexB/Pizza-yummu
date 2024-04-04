@@ -1,3 +1,3 @@
-import PromotionsPage from "./promotions";
+import PromotionsPage from "./Promotions";
 
 export default PromotionsPage;

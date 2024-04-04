@@ -1,13 +1,17 @@
-import React from "react";
-import ReactDOM from 'react-dom/client';
-import App from "../src/components/app/app";
-import { HashRouter } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import store from './components/store/store';
+import App from '../src/components/app/App';
+import { HashRouter } from 'react-router-dom';
 
-const div = document.getElementById("root");
-const root = ReactDOM.createRoot(div);
+const rootElement = document.getElementById('root');
 
-root.render(
-    <HashRouter>
-        <App />
-    </HashRouter>
+ReactDOM.render(
+    <Provider store={store}>
+        <HashRouter>
+            <App />
+        </HashRouter>
+    </Provider>,
+    rootElement
 );

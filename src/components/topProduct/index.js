@@ -1,3 +1,3 @@
-import TopProduct from "./topProduct";
+import TopProduct from "./TopProduct";
 
 export default TopProduct;

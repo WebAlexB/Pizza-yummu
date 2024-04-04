@@ -4,7 +4,8 @@ import './header.css';
 
 class Header extends Component {
     render() {
-        const { cartCount } = this.props;
+        const { cart, totalCartItems } = this.props;
+        const cartItemCount = cart ? Object.values(cart).reduce((total, count) => total + count, 0) : 0;
         return (
             <header className="header-yummu">
                 <div className="menu-header">
@@ -26,7 +27,7 @@ class Header extends Component {
                     </div>
                     <div className="card-header">
                         <Link to="/"><img src="static/images/header/card.png" alt="card"/></Link>
-                        <span className="cart-count">{cartCount}</span>
+                        <span className="cart-count">{totalCartItems}</span>
                     </div>
                 </div>
             </header>

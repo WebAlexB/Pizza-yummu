@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import Product from '../product/product';
-import TopProduct from '../topProduct/topProduct';
-import ContactBlock from '../contactBlock/contactBlock';
+import Product from "../product";
+import TopProduct from "../topProduct";
+import ContactBlock from "../contactBlock";
 import "../section/section.css";
 
 class Section extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentCategory: 'Піца'
-        };
+            currentCategory: 'Піца',
+        }
     }
 
     handleCategoryChange = (category) => {
@@ -18,6 +18,7 @@ class Section extends Component {
 
     render() {
         const { currentCategory } = this.state;
+        const { handleAddToCart, cart } = this.props;
 
         return (
             <div className="sections">
@@ -33,7 +34,11 @@ class Section extends Component {
                             <button onClick={() => this.handleCategoryChange('Кава')}>Кава</button>
                         </div>
                     </div>
-                    <Product currentCategory={currentCategory} />
+                    <Product
+                        currentCategory={currentCategory}
+                        handleAddToCart={handleAddToCart}
+                        cart={cart}
+                    />
                 </div>
                 <div className="section">
                     <TopProduct />
