@@ -1,8 +1,44 @@
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 80px;
+    color: #ECC600;
     height: 100vh;
+    padding: 250px 0;
+    background: #363636;
+}
+
+.about p {
+    font-size: 20px;
+    color: #F0F0F0;
+}
+.block-text {
+    padding-bottom: 60px;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.images-about-block {
+    width: 100%;
+    align-items: flex-end;
+    position: relative;
+}
+.images-about-block p {
+    position: absolute;
+    top: -30px;
+    left: 50px;
+    padding: 0px 20px;
+    width: auto;
+    max-width: 800px;
+}
+.image-about-block {
+    display: flex;
+    justify-content: flex-end;
+}
+.about-pizza {
+    margin-left: -89px;
+    margin-bottom: -75px;
+}
+
+.about-block {
+    padding-bottom: 20px;
 }

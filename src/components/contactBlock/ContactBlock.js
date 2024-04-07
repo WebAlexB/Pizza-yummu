@@ -10,7 +10,7 @@ class ContactBlock extends Component {
                     <img src="static/images/body/map.png" alt="map"/>
                 </div>
                 <div className="info-contact">
-                    <h4>Контакти</h4>
+                    <h2>Контакти</h2>
                     <div>
                         <p>Проспект Олександра Поля, 80</p>
                         <p>+3 8 050 343 71 27</p>

@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
+import ContactBlock from "../../contactBlock";
 import './contact.css';
-import Footer from "../../footer";
-import Header from "../../header";
 
 
 class Contact extends Component {
     render() {
         return (
             <>
-                <Header/>
                 <div className="contact">
-                    <h2>Контакти</h2>
+                    <div className="section">
+                        <ContactBlock/>
+                    </div>
                 </div>
-                <Footer/>
             </>
         );
     }

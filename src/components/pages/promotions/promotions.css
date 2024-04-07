@@ -1,8 +1,4 @@
 .promotions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 80px;
-    height: 100vh;
+    text-align: center;
+    padding: 200px;
 }

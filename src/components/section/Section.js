@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Product from "../product";
 import TopProduct from "../topProduct";
 import ContactBlock from "../contactBlock";
+import Banner from "../banner";
+import Tab from "../tab";
 import "../section/section.css";
 
 class Section extends Component {
@@ -13,26 +15,20 @@ class Section extends Component {
     }
 
     handleCategoryChange = (category) => {
-        this.setState({ currentCategory: category });
+        this.setState({currentCategory: category});
     }
 
     render() {
-        const { currentCategory } = this.state;
-        const { handleAddToCart, cart } = this.props;
+        const {currentCategory} = this.state;
+        const {handleAddToCart, cart} = this.props;
 
         return (
             <div className="sections">
                 <div className="section">
-                    <div className="banners">
-                        <img className="banner-pizza" src="static/images/slider/yellow.png" alt="yellow"/>
-                        <img className="pizza" src="static/images/slider/pizza.png" alt="pizza"/>
-                    </div>
+                    <Banner/>
                     <div className="tabs">
                         <h3>Меню</h3>
-                        <div className="tab">
-                            <button onClick={() => this.handleCategoryChange('Піца')}>Піца</button>
-                            <button onClick={() => this.handleCategoryChange('Кава')}>Кава</button>
-                        </div>
+                        <Tab onCategoryChange={this.handleCategoryChange}/>
                     </div>
                     <Product
                         currentCategory={currentCategory}
@@ -41,10 +37,10 @@ class Section extends Component {
                     />
                 </div>
                 <div className="section">
-                    <TopProduct />
+                    <TopProduct/>
                 </div>
                 <div className="section">
-                    <ContactBlock />
+                    <ContactBlock/>
                 </div>
             </div>
         );

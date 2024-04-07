@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import './promotions.css';
-import Footer from "../../footer";
-import Header from "../../header";
+import TopProduct from "../../topProduct";
 
 class Promotions extends Component {
     render() {
         return (
             <>
-                <Header/>
                 <div className="promotions">
-                    <h2>Акції</h2>
+                    <div>
+                        <h1>Акції</h1>
+                    </div>
+                    <div className="section">
+                        <TopProduct/>
+                    </div>
                 </div>
-                <Footer/>
             </>
         );
     }

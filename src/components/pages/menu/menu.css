@@ -1,8 +1,17 @@
-.menu {
+.menu-page {
+    height: auto;
+}
+.menu-page .tabs {
+    display: block;
+}
+.menu-page .tab {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 80px;
-    height: 100vh;
+    padding-left: 40px;
+}
+.tabs h1 {
+    text-align: center;
+    padding-top: 125px;
+}
+.menu-page .products {
+    margin-bottom: 50px;
 }

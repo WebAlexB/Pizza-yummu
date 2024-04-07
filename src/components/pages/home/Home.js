@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { addToCart } from '../../action/addToCart';
 import Header from '../../header';
 import Section from '../../section';
-import Footer from '../../footer';
 
 class Home extends Component {
     render() {
@@ -12,7 +11,6 @@ class Home extends Component {
             <div className="home">
                 <Header cart={cart} totalCartItems={totalCartItems} />
                 <Section handleAddToCart={addToCart} />
-                <Footer />
             </div>
         );
     }
