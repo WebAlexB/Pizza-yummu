@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addToCart } from '../../action/addToCart';
-import Header from '../../header';
-import Section from '../../section';
+import Header from '../../Header/Header';
+import Section from '../../Section';
 
 class Home extends Component {
     render() {

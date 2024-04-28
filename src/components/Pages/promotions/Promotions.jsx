@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './promotions.css';
-import TopProduct from "../../topProduct";
+import TopProduct from "../../TopProduct";
 
 class Promotions extends Component {
     render() {

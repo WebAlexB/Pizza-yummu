@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import "../topProduct/topProduct.css";
+import "../TopProduct/topProduct.css";
 
 class TopProduct extends Component {
     render() {

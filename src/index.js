@@ -1,8 +1,9 @@
+// index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './components/store/store';
-import App from '../src/components/app/App';
+import App from '../src/components/App/App.jsx';
 import './fonts.css';
 import { HashRouter } from 'react-router-dom';
 

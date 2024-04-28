@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {Route, Routes} from "react-router-dom";
-import Home from "../pages/home";
-import Menu from "../pages/menu";
-import About from "../pages/about";
-import Contact from "../pages/contact";
-import Promotions from "../pages/promotions";
-import NotFound from "../pages/notFound";
+import Home from "../Pages/home";
+import Menu from "../Pages/menu";
+import About from "../Pages/about";
+import Contact from "../Pages/contact";
+import Promotions from "../Pages/promotions";
+import NotFound from "../Pages/notFound";
 
 class Router extends Component {
     render() {

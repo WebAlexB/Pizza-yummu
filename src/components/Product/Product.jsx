@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import productsData from '../services/productsData';
-import QuantityControl from '../quantityControl/QuantityControl';
-import '../product/product.css';
+import productsData from '../Services/productsData';
+import { connect } from 'react-redux';
+import { addToCart, increment, decrement } from '../reducers/cartSlice';
+import QuantityControl from '../QuantityControl/QuantityControl';
+import '../Product/product.css';
 
 class Product extends Component {
     constructor(props) {

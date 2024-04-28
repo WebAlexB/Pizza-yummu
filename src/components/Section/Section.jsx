@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
-import Product from "../product";
-import TopProduct from "../topProduct";
-import ContactBlock from "../contactBlock";
-import Banner from "../banner";
-import Tab from "../tab";
-import "../section/section.css";
+import Product from "../Product";
+import TopProduct from "../TopProduct";
+import ContactBlock from "../ContactBlock";
+import Banner from "../Banner";
+import Tab from "../Tab";
+import { connect } from 'react-redux';
+import "../Section/section.css";
 
 class Section extends Component {
     constructor(props) {

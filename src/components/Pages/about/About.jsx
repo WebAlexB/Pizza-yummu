@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './about.css';
-import ContactBlock from "../../contactBlock";
+import ContactBlock from "../../ContactBlock";
 
 class About extends Component {
     render() {

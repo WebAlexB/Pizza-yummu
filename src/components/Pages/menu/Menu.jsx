@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Tab from "../../tab";
-import Product from "../../product";
-import TopProduct from "../../topProduct";
+import Tab from "../../Tab";
+import Product from "../../Product";
+import TopProduct from "../../TopProduct";
 import './menu.css';
 
 class Menu extends Component {

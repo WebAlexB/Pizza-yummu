@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ContactBlock from "../../contactBlock";
+import ContactBlock from "../../ContactBlock";
 import './contact.css';
 
 

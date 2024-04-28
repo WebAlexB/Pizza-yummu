@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../contactBlock/contactBlock.css';
+import '../ContactBlock/contactBlock.css';
 
 
 class ContactBlock extends Component {
